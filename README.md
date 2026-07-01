@@ -1,6 +1,9 @@
 # ProofSetu ZK PayOps
 
 **Private compliance proofs for Stellar workflow payments.**
+## Live Demo
+
+Frontend demo: [https://YOUR-VERCEL-LINK-HERE](https://proofsetu-zk-payops.vercel.app/)
 
 ProofSetu ZK PayOps is a Stellar-based hackathon prototype that uses zero-knowledge proofs to verify workflow payment eligibility without exposing private compliance or KYC data publicly.
 
@@ -66,14 +69,14 @@ This hackathon prototype includes:
 
 ## Repository Structure
 
-```text
+text
 contracts/   Stellar/Soroban verifier and workflow contract files
 circuits/    ZK proof circuit files
 frontend/    Demo dashboard files
 scripts/     Helper scripts for proof generation, deployment, and verification
 docs/        Architecture, ZK design, and roadmap
 demo/        Demo script, screenshots, and video notes
-```
+
 
 ## Demo Flow
 
