@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProofSetu ZK PayOps</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="page">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Stellar Hacks: Real-World ZK</p>
+        <h1>ProofSetu ZK PayOps</h1>
+        <p class="subtitle">
+          Private compliance proofs for Stellar workflow payments.
+        </p>
+        <p class="hero-text">
+          ProofSetu lets a workflow participant prove payment eligibility
+          without revealing private KYC, compliance, invoice, or approval data.
+        </p>
+      </div>
+
+      <div class="hero-card">
+        <span class="status-dot"></span>
+        <p>ZK proof-powered workflow verification</p>
+      </div>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <p class="label">Workflow ID</p>
+        <h2>PS-ZK-001</h2>
+        <p>Use case: Vendor payment eligibility</p>
+      </div>
+
+      <div class="card">
+        <p class="label">Public Rule</p>
+        <h2>Minimum Score ≥ 70</h2>
+        <p>The public rule is visible to verifier and workflow participants.</p>
+      </div>
+
+      <div class="card private">
+        <p class="label">Private Data</p>
+        <h2>Hidden</h2>
+        <p>Eligibility score, KYC record, and internal approval data are not revealed.</p>
+      </div>
+    </section>
+
+    <section class="flow-card">
+      <div class="flow-header">
+        <div>
+          <p class="eyebrow">Demo Flow</p>
+          <h2>Private Eligibility Proof</h2>
+        </div>
+        <button id="runDemoBtn">Run Demo Flow</button>
+      </div>
+
+      <div class="steps">
+        <div class="step active" id="step1">
+          <span>1</span>
+          <div>
+            <h3>Create Workflow</h3>
+            <p>Payment workflow request is created on the ProofSetu dashboard.</p>
+          </div>
+        </div>
+
+        <div class="step" id="step2">
+          <span>2</span>
+          <div>
+            <h3>Generate ZK Proof</h3>
+            <p>Participant proves eligibility_score ≥ minimum_required_score.</p>
+          </div>
+        </div>
+
+        <div class="step" id="step3">
+          <span>3</span>
+          <div>
+            <h3>Verify on Stellar</h3>
+            <p>Proof verification is connected to a Stellar/Soroban workflow contract.</p>
+          </div>
+        </div>
+
+        <div class="step" id="step4">
+          <span>4</span>
+          <div>
+            <h3>Eligible for Settlement</h3>
+            <p>Verified workflow becomes eligible for future Stellar USDC settlement.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="status-panel">
+      <div>
+        <p class="label">ZK Proof Status</p>
+        <h2 id="proofStatus">Not generated</h2>
+      </div>
+
+      <div>
+        <p class="label">Stellar Verification</p>
+        <h2 id="stellarStatus">Pending</h2>
+      </div>
+
+      <div>
+        <p class="label">Workflow Status</p>
+        <h2 id="workflowStatus">Pending</h2>
+      </div>
+    </section>
+
+    <section class="explanation">
+      <h2>What ZK is doing</h2>
+      <p>
+        The ZK proof proves that the participant satisfies the public eligibility
+        rule without revealing the private eligibility score or underlying
+        compliance record.
+      </p>
+
+      <h2>What Stellar is doing</h2>
+      <p>
+        Stellar/Soroban is used as the workflow verification and settlement layer.
+        The verifier result can update the workflow state and later unlock
+        Stellar USDC settlement.
+      </p>
+    </section>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
