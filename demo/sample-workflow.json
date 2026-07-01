@@ -1,0 +1,19 @@
+{
+  "workflow_id": "PS-ZK-001",
+  "use_case": "Vendor payment eligibility",
+  "payer": "Stellar testnet payer address",
+  "participant": "Stellar testnet participant address",
+  "public_rule": {
+    "minimum_required_score": 70
+  },
+  "private_data_not_revealed": {
+    "eligibility_score": "hidden",
+    "kyc_record": "hidden",
+    "internal_approval_data": "hidden"
+  },
+  "zk_statement": "Participant proves eligibility_score >= minimum_required_score without revealing eligibility_score.",
+  "proof_status": "generated",
+  "stellar_verification_status": "pending",
+  "workflow_status": "proof_submitted",
+  "future_settlement_asset": "Stellar USDC"
+}
