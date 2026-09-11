@@ -165,3 +165,15 @@ The current goal is to demonstrate a practical ZK + Stellar use case where the Z
 This is a hackathon prototype.
 
 It is not audited, not production-ready, and must not be used with real funds, real private documents, or sensitive user data.
+
+<!-- RAMA-SPONSORS-START -->
+
+## Support continued development
+
+If this project is useful to you, you can support **Rama Chandra's independent technical work** through GitHub Sponsors:
+
+https://github.com/sponsors/kaulastudies
+
+Sponsorship helps fund public development, AI and evaluation experiments, testing, documentation, hosting and maintenance. It does not automatically include consulting, custom development, confidential data access or exclusive IP rights.
+
+<!-- RAMA-SPONSORS-END -->
